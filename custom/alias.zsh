@@ -84,3 +84,6 @@ alias pubdjtz='rsync -avz -e "ssh -i /home/twebb/.ssh/krisna_www_rsa" /home/tweb
 alias dlast='exec $(ls -1tr ~/dl/ | tail -n 1)'
 alias indentpro='indent -nut -bap -bacc -bad -nbc -bli0 -nbs -ncdb -nce -ci4 -cli0 -d0 -di1 -fca -nfc1 -i004 -nip -l79 -nlp -npcs -npsl -sob -nsc -c33 -lc79'
 alias dc="git --git-dir=./.dotfiles/.git --work-tree=$HOME"
+function dca {
+    git --git-dir=./.dotfiles/.git --work-tree="$HOME" add "$1"
+}
