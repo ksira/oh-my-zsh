@@ -10,11 +10,11 @@ alias mkdir='nocorrect mkdir'
 alias jo=jobs
 alias -g is="ls"
 if ls -F --color=auto >&/dev/null; then
-	alias ls="ls --color=auto -F"
+    alias ls="ls --color=auto -F"
 else
-	alias ls="ls -F"
+    alias ls="ls -F"
 fi
-#pager()  {page="$1"; vim -c ":Man $page";}  
+#pager()  {page="$1"; vim -c ":Man $page";}
 #alias man=pager # View man pages in vim
 alias it="ls -ltr"
 alias ir="ls -lh"
@@ -32,6 +32,10 @@ alias pu='pushd'
 alias tsl="tail -f /var/log/syslog"
 alias df="df -hT"
 alias vi="vim"
+alias e="emacsclient -t"
+alias ec="emacsclient -c"
+alias vim="TERM=xterm emacsclient -t"
+alias vi=emacsclient -t
 alias unipref="vi .unison/default.prf"
 alias netstart='sudo /etc/rc.d/network restart'
 alias -s com=firefox
@@ -87,3 +91,5 @@ alias dc="git --git-dir=./.dotfiles/.git --work-tree=$HOME"
 function dca {
     git --git-dir=./.dotfiles/.git --work-tree="$HOME" add "$1"
 }
+#alias ipython="ipython2"
+alias ipcluster="ipcluster2"

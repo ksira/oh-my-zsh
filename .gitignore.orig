@@ -1,0 +1,14 @@
+locals.zsh
+log/.zsh_history
+projects.zsh
+#custom/*
+!custom/example
+!custom/example.zsh
+<<<<<<< HEAD
+cache
+*.sw[p-z]
+=======
+*.swp
+!custom/example.zshcache
+cache/
+>>>>>>> d165a84dc0e8d2eb0774ed26995e7046c0aff41f
