@@ -1,5 +1,5 @@
 # Begin Enviromnent
-export EDITOR="vim"
+export EDITOR="emacsclient -t"
 export PAGER="most"
 export BROWSER="firefox"
 export SHELL="zsh"

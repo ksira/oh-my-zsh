@@ -34,7 +34,8 @@ alias df="df -hT"
 alias vi="vim"
 alias e="emacsclient -t"
 alias ec="emacsclient -c"
-alias vim="TERM=xterm emacsclient -t"
+alias vim="emacsclient -t"
+alias v="f -e 'emacsclient -t'"
 alias vi=emacsclient -t
 alias unipref="vi .unison/default.prf"
 alias netstart='sudo /etc/rc.d/network restart'
@@ -87,7 +88,7 @@ alias pubtptz='rsync -avz -e "ssh -i /home/twebb/.ssh/krisna_www_rsa" /home/tweb
 alias pubdjtz='rsync -avz -e "ssh -i /home/twebb/.ssh/krisna_www_rsa" /home/twebb/src/django/tz/ www-data@krisna:~/tz/'
 alias dlast='exec $(ls -1tr ~/dl/ | tail -n 1)'
 alias indentpro='indent -nut -bap -bacc -bad -nbc -bli0 -nbs -ncdb -nce -ci4 -cli0 -d0 -di1 -fca -nfc1 -i004 -nip -l79 -nlp -npcs -npsl -sob -nsc -c33 -lc79'
-alias dc="git --git-dir=./.dotfiles/.git --work-tree=$HOME"
+#alias dc="git --git-dir=./.dotfiles/.git --work-tree=$HOME"
 function dca {
     git --git-dir=./.dotfiles/.git --work-tree="$HOME" add "$1"
 }

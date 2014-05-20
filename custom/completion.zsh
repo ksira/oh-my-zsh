@@ -16,4 +16,9 @@ autoload -Uz replace-string-again
 zle -N replace-pattern replace-string
 zle -N replace-string-again
 
+_ghc() {
+    compadd `ghc --show-options | awk '{ print "\"", $1, "\"" }'`
+}
+compdef _ghc ghc
 compdef manage.py
+

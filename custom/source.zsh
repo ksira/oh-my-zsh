@@ -8,7 +8,7 @@ alias s='fasd -s' # show / search / select
 alias d='fasd -d' # directory
 alias f='fasd -f' # file
 alias j='fasd_cd -d' # cd, same functionality as j in autojump
-alias v='f -t -e vim -b viminfo'
+## alias v='f -t -e vim -b viminfo'
 alias o='a -e xdg-open'
 
 source /etc/profile

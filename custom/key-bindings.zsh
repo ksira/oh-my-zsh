@@ -15,5 +15,19 @@ bindkey -M vicmd h vi-repeat-search
 bindkey -M vicmd H vi-rev-repeat-search
 bindkey -M viins ii vi-cmd-mode
 bindkey -M vicmd v edit-command-line # ESC-v to edit in an external editor.
+zmodload zsh/terminfo
+bindkey "$terminfo[kcuu1]" history-substring-search-up
+bindkey "$terminfo[kcud1]" history-substring-search-down
+
+# bind P and N for EMACS mode
+bindkey -M emacs '^P' history-substring-search-up
+bindkey -M emacs '^N' history-substring-search-down
+
+# bind k and j for VI mode
+# bindkey -M viins '^I' history-substring-search-up
+bindkey -M viins '^E' history-substring-search-down
+
+bindkey -M vicmd 'i' history-substring-search-up
+bindkey -M vicmd 'e' history-substring-search-down
 
 stty stop undef
