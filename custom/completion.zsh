@@ -22,3 +22,11 @@ _ghc() {
 compdef _ghc ghc
 compdef manage.py
 
+AUTOSUGGESTION_HIGHLIGHT_COLOR='fg=magenta'
+AUTOSUGGESTION_HIGHLIGHT_CURSOR=1
+
+# Enable autosuggestions automatically
+#zle-line-init() {
+#    zle autosuggest-start
+#}
+zle -N zle-line-init

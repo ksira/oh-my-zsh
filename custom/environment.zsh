@@ -9,6 +9,7 @@ export MONTHLYDOC=~/documents/$(ls ~/documents -1t | head -n1)/
 export CDPATH=:..:~/:$MONTHLYDOC:$MONTHLYDATA:~/src
 export BOOST_BUILD_PATH="/usr/share/boost-build/"
 export DIRSTACKSIZE=16
-#export TERM=xterm
+export TERM=rxvt-unicode-256color
 #export GHC_PACKAGE_PATH=/home/twebb/.ghc/x86_64-linux-7.6.3/package.conf.d:/usr/lib/ghc-7.6.3/package.conf.d
+export KEYTIMEOUT=0
 # End Evironment
