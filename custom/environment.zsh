@@ -1,4 +1,5 @@
 # Begin Enviromnent
+export XDG_CONFIG_HOME=/home/twebb/.config
 export EDITOR="emacsclient -t"
 export PAGER="most"
 export BROWSER="firefox"
